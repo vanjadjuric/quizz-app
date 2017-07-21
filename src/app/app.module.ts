@@ -1,3 +1,6 @@
+import { QuizzPage } from '../pages/quizz/quizz';
+import { QuestionsPage } from '../pages/questions/questions';
+import { DifficultyPage } from '../pages/difficulty/difficulty';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -13,7 +16,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DifficultyPage,
+    QuestionsPage,
+    QuizzPage
   ],
   imports: [
     BrowserModule,
@@ -23,12 +29,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DifficultyPage,
+    QuestionsPage,
+    QuizzPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

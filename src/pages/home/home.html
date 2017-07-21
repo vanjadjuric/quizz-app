@@ -1,18 +1,22 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+<ion-content padding>
+
+  <button ion-button menuToggle round outline>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-grid>
+    <ion-row>
+      <div col-12 text-center id="display-logo"> </div>
+    </ion-row>
+    <ion-row>
+      <div col-12 text-center>
+        <button col-12 ion-button round outline (click)='GoToDifficulty()'>Start</button>
+      </div>
+    </ion-row>
+    <ion-row>
+      <button col-12 ion-button round outline (click)='GoToQuestions()'>Questions</button>
+    </ion-row>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  </ion-grid>
 </ion-content>

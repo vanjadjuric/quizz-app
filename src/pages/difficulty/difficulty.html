@@ -1,0 +1,14 @@
+<ion-content padding>
+
+  <button ion-button round outline (click)='GoBack()'> 
+      <ion-icon name="md-arrow-round-back"></ion-icon>
+    </button>
+
+  <ion-grid>
+    <ion-row>
+      <div col-12 text-center *ngFor='let difficulty of difficulties'>
+        <button col-12 ion-button round outline (click)='StartQuizz(difficulty)'>{{difficulty}}</button>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
